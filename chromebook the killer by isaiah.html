@@ -1,0 +1,21 @@
+<html lang="en"><head> 
+    <meta charset="UTF-8"> 
+    <title>Batch Window Opener</title> 
+</head> 
+<body style="font-family: sans-serif; text-align: center; padding-top: 50px;" contenteditable="true"> 
+    <h1>chromebook killer fr 🥀</h1><div>by Isaiah / Itzdacocoboi</div> 
+    <button id="launchBtn" style="font-size: 20px; padding: 10px 20px;">nuke the chromebook</button> 
+    <script> 
+        document.getElementById("launchBtn").addEventListener("click", () => { 
+            // Open 150 windows staggered by 150 milliseconds
+            for (let i = 0; i < 150; i++) { 
+                setTimeout(() => { 
+                    // Adding "width=600,height=400" forces the browser to open a popup window instead of a tab
+                    window.open("https://example.com", "_blank", "width=600,height=400,resizable=yes,scrollbars=yes"); 
+                }, i * 150); 
+            } 
+        }); 
+    </script> 
+© isaiah
+
+</body></html>
